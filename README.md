@@ -1,9 +1,13 @@
-# ar-drone
+# Repo for MIT Drone Hackathon
 
 [![Build Status](https://secure.travis-ci.org/felixge/node-ar-drone.png)](http://travis-ci.org/felixge/node-ar-drone)
 
+Based on node-ar-drone by felixge.
+
 An implementation of the networking protocols used by the
 [Parrot AR Drone 2.0](http://ardrone2.parrot.com/). It appears that 1.0 drones are also [compatible](https://github.com/felixge/node-ar-drone/issues/11#issuecomment-9402270).
+
+## Quick Start
 
 Install Node.js in your system. Clone this repo to your local hard drive. Then in windows, you need to add an environment variable "NODE_PATH", and point it to the npm_modules folder, such as "E:\Research\MITRA\UAV\ARDroneHackathon\node_modules"
 
