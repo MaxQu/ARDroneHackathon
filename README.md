@@ -9,9 +9,15 @@ An implementation of the networking protocols used by the
 
 ## Quick Start
 
-Install Node.js in your system. Clone this repo to your local hard drive. Then in windows, you need to add an environment variable "NODE_PATH", and point it to the npm_modules folder, such as "E:\Research\MITRA\UAV\ARDroneHackathon\node_modules"
+Install [Node.js](https://nodejs.org/en/) in your system. 
 
-Then you should be able to run the script "teststart.js" in your command window, without any error messages.
+Clone this repo to your local hard drive. Then in windows, you need to add an environment variable "NODE_PATH", and point it to the npm_modules folder, such as "E:\Research\MITRA\UAV\ARDroneHackathon\node_modules"
+
+Then you should be able to run the script "node teststart.js" in your command window, without any error messages. This shows that you have set up the basic tools on PC client. 
+
+Then if you have the AR drone with you. Turn if on. Turn on WIFI in your PC. Connect to the Drone wifi. Then you should be able to run "node quickstart.js" in your command window and see the drone takeoffs, rotates and lands. This show that you have a successful connection between your pc and the drone, and you are able to run your own code in javasrcipt and control the drone.
+
+For all advanced functions and libraries, please see the following instruction. The libraries is in the "npm-module" subfolder and we should make the lib changes there. Put all the main executables in the root folder.
 
 ## Introduction
 
