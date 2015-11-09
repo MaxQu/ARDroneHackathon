@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        launch drone
+    </title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="command.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="icon.jpg" class="icon">
+                <span class="text">Relay: Drone Command Center</span>
+            </a>
+            <a href="drone_map.html">
+                <button type="button" class="btn btn-default navbar-btn navbar-right">Map</button>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row title">
+            <div class="col-lg-2 col-md-2">
+                <p>Drone ID</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Status</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Location</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Charge</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Duration Idle</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Condition</p>
+            </div>
+        </div>
+        <div class="row info accent">
+            <div class="col-lg-2 col-md-2">
+                <p>1728</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Active</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Harvard Square</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>60%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0min</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="col-lg-2 col-md-2">
+                <p>1532</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>In Flight</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.397261, -71.246808</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>32%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info accent">
+            <div class="col-lg-2 col-md-2">
+                <p>3528</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Reserved</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Harvard Square</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>100%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>340min</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="col-lg-2 col-md-2">
+                <p>4536</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Waiting</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.397261, -71.246808</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>100%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>780min</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info accent">
+            <div class="col-lg-2 col-md-2">
+                <p>5678</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>In Flight</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.342218, -71.176426</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>89%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="col-lg-2 col-md-2">
+                <p>1532</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>In Flight</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.397261, -71.246808</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>32%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info accent">
+            <div class="col-lg-2 col-md-2">
+                <p>1532</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>In Flight</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.397261, -71.246808</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>32%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="col-lg-2 col-md-2">
+                <p>1532</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>In Flight</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.397261, -71.246808</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>32%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info accent">
+            <div class="col-lg-2 col-md-2">
+                <p>1532</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>In Flight</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.397261, -71.246808</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>32%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="col-lg-2 col-md-2">
+                <p>1532</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>In Flight</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.397261, -71.246808</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>32%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info accent">
+            <div class="col-lg-2 col-md-2">
+                <p>1532</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>In Flight</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.397261, -71.246808</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>32%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="col-lg-2 col-md-2">
+                <p>1532</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>In Flight</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>42.397261, -71.246808</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>32%</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>0</p>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <p>Operational</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

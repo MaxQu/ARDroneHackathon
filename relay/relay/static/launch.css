@@ -1,0 +1,25 @@
+
+.icon {
+    height:20px;
+    margin-left: -15px;
+}
+
+.map {
+    padding: 0px;
+}
+
+
+/*.jumbotron .mappic {
+  background-size: cover;
+  background-position: center center;
+  width:100%;
+  margin-top: -20px;
+}*/
+
+.jumbotron .mappic {
+  background-size: cover;
+  background-position: center center;
+  width:110%;
+  margin-top: -20px;
+  margin-left: -10px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        launch drone
+    </title>
+    <link rel="stylesheet" href="/static/font-awesome.min.css">
+    <script type="text/javascript" src="/static/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="launch.css">
+
+
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="icon.jpg" class="icon">
+                <span class="text">Relay: citywide drone delivery</span></a>
+        </div>
+    </div>
+    <div class="jumbotron map" style="padding:0px;">
+        <img src="map2.png" alt="" class="mappic">
+    </div>
+    <p align="center" class="heading">Delivery Information</p>
+    <div class="container">
+        <div class="row delivery">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <p>Optimal Rout found</p>
+                <p>Package contents: cold medication</p>
+                <p>Package delivery expected at 6:27pm</p>
+                <p>Address for delivery is 127 Hampshire</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img src="rout.png" alt="schedule">
+            </div>
+        </div>
+    </div>
+
+    <div class="deploy">
+    <!--<input type="button" onclick="'httpGet('/takeoff')" class="btn btn-lg btn-danger">Deploy Drone</input>-->
+    <a href="/takeoff">
+        <button type="button" onclick="'httpGet('/takeoff')" class="btn btn-lg btn-danger">Deploy Drone</button>
+    </a>
+    </div>
+
+<script>
+function httpGet(theUrl)
+{
+    console.log(theUrl);
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, true ); // false for synchronous request
+    xmlHttp.send( null );
+}
+</script>
+</body>
+</html>
